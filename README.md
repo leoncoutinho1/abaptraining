@@ -3,7 +3,7 @@
 ## Neste arquivo vou manter alguns links e informações que julgar importantes sobre ABAP e outras coisas relacionadas.
 
 ### Função para que trabalha com calendários de fábrica (tabela TFACS).
-'''
+```
    CALL FUNCTION 'DAY_ATTRIBUTES_GET'
  EXPORTING
    FACTORY_CALENDAR                 = 'BR'
@@ -25,4 +25,4 @@
 *   DATE_INCONSISTENCY               = 4
 *   OTHERS                           = 5
           .   
-'''
+```
