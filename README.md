@@ -1,8 +1,8 @@
-# abaptraining
+### abaptraining
 
-## Neste arquivo vou manter alguns links e informações que julgar importantes sobre ABAP e outras coisas relacionadas.
+#### Neste arquivo vou manter alguns links e informações que julgar importantes sobre ABAP e outras coisas relacionadas.
 
-### Função para que trabalha com calendários de fábrica (tabela TFACS).
+##### Função que trabalha com _calendários de fábrica_(tabela TFACS).
 ```
    CALL FUNCTION 'DAY_ATTRIBUTES_GET'
  EXPORTING
@@ -26,3 +26,11 @@
 *   OTHERS                           = 5
           .   
 ```
+- Passando um peŕíodo como parâmetro está função retorna uma tabela com os dias do intervalo informado.
+- A tabela segue o seguinte formato:
+   
+   | DATE | FREEDAY | HOLIDAY | HOLIDAY_ID | TXT_SHORT | TXT_LONG | WEEKDAY | WEEKDAY_S | WEEKDAY_L | DAY_STRING |
+   
+- Existe a possibilidade de passar também um calendário de feriados (do tipo da tabela THOCS).
+- Para encontrar o primeiro dia útil após uma data pode-se utilzar a função passando um período a partir da data desejada. Após o retorno da função deve-se eliminar as linhas que possuem o campo holiday marcado.
+
