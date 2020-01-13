@@ -1,8 +1,8 @@
 *----------------------------------------------------------------------*
-*                              VIVO                                    *
+*                              Example                                 *
 *----------------------------------------------------------------------*
 * Author.....: Leonardo Coutinho Gomes                                 *
-* Date.......: 25.11.2019 08:37:17                                     *
+* Date.......: 13.01.2020                                              *
 * Module.....: Treinamento                                             *
 * Project....: treinamento ABAP                                        *
 * Description: Upload/Download de arquivo                              *
