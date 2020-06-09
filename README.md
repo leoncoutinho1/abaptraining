@@ -34,6 +34,19 @@
 - Existe a possibilidade de passar também um calendário de feriados (do tipo da tabela THOCS).
 - Para encontrar o primeiro dia útil após uma data pode-se utilzar a função passando um período a partir da data desejada. Após o retorno da função deve-se eliminar as linhas que possuem o campo holiday marcado.
 
+- Função para somar dias à uma data.
+```
+CALL FUNCTION 'RP_CALC_DATE_IN_INTERVAL'
+    EXPORTING
+      date      = lw_date
+      days      = 5
+      months    = 0
+      signum    = '+'    " Signum : "+" or "-" to add or remove
+      years     = 0
+    IMPORTING
+      calc_date = lw_processed_date.
+```
+
 ###### Validação de valor de um campo com Field Exits
 http://abap4life.blogspot.com/2012/06/field-exits-como-validar-programas_412.html
 
